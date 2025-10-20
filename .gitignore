@@ -1,4 +1,36 @@
+# Kaggle & VSCode
 .kaggle/
 .vscode/
-datasets/
+
+# Virtual environments
+env/
 .venv/
+
+# Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Datasets & training outputs
+datasets/
+runs/
+weights/
+
+# Large binary/model files
+*.pt
+*.pth
+*.onnx
+*.zip
+*.7z
+*.rar
+*.jpg
+*.png
+*.mp4
+*.avi
+*.csv
+*.xlsx
+
+# System files
+.DS_Store
+Thumbs.db
