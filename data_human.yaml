@@ -1,0 +1,7 @@
+path: C:/Users/kim36/datasets/VisDrone/VisDrone_Dataset
+train: VisDrone2019-DET-train/images
+val: VisDrone2019-DET-val/images
+nc: 2
+names:
+- pedestrian
+- people
