@@ -1,36 +1,78 @@
-# Kaggle & VSCode
-.kaggle/
+############################
+# Editor & tools
+############################
 .vscode/
+.idea/
+.kaggle/
+.history/
 
+############################
 # Virtual environments
+############################
 env/
+.env
 .venv/
+venv/
 
-# Cache
+############################
+# Python caches & artifacts
+############################
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.pkl
+*.log
+*.tmp
 
-# Datasets & training outputs
-datasets/
-runs/
-weights/
+############################
+# Datasets, outputs, weights (YOLO/Ultralytics)
+############################
+# Ignore full datasets and training outputs (contents)
+datasets/**
+runs/**
+weights/**
+ultralytics/runs/**
 
-# Large binary/model files
+# Allow placeholder files so the folders can exist in repo if needed
+!datasets/.gitkeep
+!runs/.gitkeep
+!weights/.gitkeep
+
+# Ignore large model/binary files globally
 *.pt
 *.pth
 *.onnx
+*.tflite
+*.engine
+*.ncnn
+
+# Archives
 *.zip
 *.7z
 *.rar
-*.jpg
-*.png
-*.mp4
-*.avi
-*.csv
-*.xlsx
+*.tar
+*.tar.gz
 
-# System files
+############################
+# Media & data files
+############################
+# Do NOT ignore images/videos/CSVs globally to allow small samples in repo
+# Instead, they are ignored transitively via datasets/ and runs/ above
+# If you want to always ignore media anywhere, uncomment the lines below
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.mp4
+# *.avi
+# *.mov
+# *.csv
+# *.xlsx
+
+############################
+# OS/system files
+############################
 .DS_Store
 Thumbs.db
+desktop.ini
